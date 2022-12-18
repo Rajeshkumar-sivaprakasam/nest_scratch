@@ -74,10 +74,17 @@ Nest is [MIT licensed](LICENSE).
 
 
 # nest program what we are seeing
+  # Hello-world
+    1. program will start from main.ts -> In nest-cli.json file they are written some code to 
+      trigger src as main folder.
+    2. Package.json was clearly written.
+    3. in main bootstrap() funtion get called
+    4. await NestFactory.create(AppModule); -> AppModule is our module file to run
+    5. after it will select controller and function also... 
+  # Application-structure-1
+    1. In app.module.ts you can see controller line. 1st that one only trigger.
+    2. we can change the route by adding anything on @Get() function
+    3. Appservice is file of our logics.
+    4. There every service file need to have @Injectable() decorator.
+    
 
-1. program will start from main.ts -> In nest-cli.json file they are written some code to 
-   trigger src as main folder.
-2. Package.json was clearly written.
-3. in main bootstrap() funtion get called
-4. await NestFactory.create(AppModule); -> AppModule is our module file to run
-5. after it will select controller and function also... 
